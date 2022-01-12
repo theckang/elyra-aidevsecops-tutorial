@@ -7,18 +7,18 @@ overlays:
       base-image: "quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.28.0"
       build-stratergy: Source
       registry: quay.io
-      registry-org: thoth-station
+      registry-org: jakang
       registry-project: elyra-aidevsecops-dataset
-      registry-secret: thoth-station-thoth-pusher-secret
+      registry-secret: jakang-pusher-secret
 
   - name: training
     build:
       base-image: "quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.28.0"
       build-stratergy: Source
       registry: quay.io
-      registry-org: thoth-station
+      registry-org: jakang
       registry-project: elyra-aidevsecops-training
-      registry-secret: thoth-station-thoth-pusher-secret
+      registry-secret: jakang-pusher-secret
 
   - name: experiment
     build:
@@ -27,18 +27,18 @@ overlays:
       custom-tag: latest
       build-stratergy: Source
       registry: quay.io
-      registry-org: thoth-station
+      registry-org: jakang
       registry-project: elyra-aidevsecops-experiment
-      registry-secret: thoth-station-thoth-pusher-secret
+      registry-secret: jakang-pusher-secret
 
   - name: inference
     build:
       base-image: "quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.28.0"
       build-stratergy: Source
       registry: quay.io
-      registry-org: thoth-station
+      registry-org: jakang
       registry-project: elyra-aidevsecops-tutorial
-      registry-secret: thoth-station-thoth-pusher-secret
+      registry-secret: jakang-pusher-secret
     deploy:
       project-org: "thoth-station"
       project-name: "elyra-aidevsecops-tutorial"
@@ -53,18 +53,18 @@ overlays:
       base-image: "quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.28.0"
       build-stratergy: Source
       registry: quay.io
-      registry-org: thoth-station
+      registry-org: jakang
       registry-project: neural-magic-download
-      registry-secret: thoth-station-thoth-pusher-secret
+      registry-secret: jakang-pusher-secret
 
   - name: pytorch-training
     build:
       base-image: "quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.28.0"
       build-stratergy: Source
       registry: quay.io
-      registry-org: thoth-station
+      registry-org: jakang
       registry-project: pytorch-training
-      registry-secret: thoth-station-thoth-pusher-secret
+      registry-secret: jakang-pusher-secret
 
   - name: nm-convert-onnx
     build:
@@ -72,9 +72,9 @@ overlays:
       custom-tag: latest
       build-stratergy: Source
       registry: quay.io
-      registry-org: thoth-station
+      registry-org: jakang
       registry-project: neural-magic-convert-onnx
-      registry-secret: thoth-station-thoth-pusher-secret
+      registry-secret: jakang-pusher-secret
 
   - name: nm-sparseml
     build:
@@ -82,18 +82,18 @@ overlays:
       custom-tag: latest
       build-stratergy: Source
       registry: quay.io
-      registry-org: thoth-station
+      registry-org: jakang
       registry-project: neural-magic-sparseml
-      registry-secret: thoth-station-thoth-pusher-secret
+      registry-secret: jakang-pusher-secret
 
   - name: nm-inference
     build:
       base-image: "quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.28.0"
       build-stratergy: Source
       registry: quay.io
-      registry-org: thoth-station
+      registry-org: jakang
       registry-project: neural-magic-deepsparse
-      registry-secret: thoth-station-thoth-pusher-secret
+      registry-secret: jakang-pusher-secret
     deploy:
       project-org: "thoth-station"
       project-name: "elyra-aidevsecops-tutorial"
@@ -108,9 +108,9 @@ overlays:
       base-image: "quay.io/thoth-station/s2i-thoth-ubi8-py38:v0.28.0"
       build-stratergy: Source
       registry: quay.io
-      registry-org: thoth-station
+      registry-org: jakang
       registry-project: elyra-aidevsecops-pytorch-inference
-      registry-secret: thoth-station-thoth-pusher-secret
+      registry-secret: jakang-pusher-secret
     deploy:
       project-org: "thoth-station"
       project-name: "elyra-aidevsecops-tutorial"
